@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38C808C51CACE56600CA931F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 38C808C41CACE56600CA931F /* index.html */; };
+		38C808C71CACE95800CA931F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C808C61CACE95800CA931F /* JavaScriptCore.framework */; };
+		38C808D01CAEC1D000CA931F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C808CF1CAEC1D000CA931F /* AVFoundation.framework */; };
 		38F1BE251CACA94A0085102D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1BE241CACA94A0085102D /* main.m */; };
 		38F1BE281CACA94A0085102D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1BE271CACA94A0085102D /* AppDelegate.m */; };
 		38F1BE2B1CACA94A0085102D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1BE2A1CACA94A0085102D /* ViewController.m */; };
 		38F1BE2E1CACA94A0085102D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F1BE2C1CACA94A0085102D /* Main.storyboard */; };
 		38F1BE301CACA94A0085102D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38F1BE2F1CACA94A0085102D /* Assets.xcassets */; };
-		38F1BE331CACA94A0085102D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38F1BE311CACA94A0085102D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38F1BE201CACA94A0085102D /* UXAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UXAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C808C41CACE56600CA931F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../index.html; sourceTree = "<group>"; };
+		38C808C61CACE95800CA931F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/PrivateFrameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		38C808CF1CAEC1D000CA931F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		38F1BE201CACA94A0085102D /* 悠闲韩国.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "悠闲韩国.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38F1BE241CACA94A0085102D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38F1BE261CACA94A0085102D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38F1BE271CACA94A0085102D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -24,7 +29,6 @@
 		38F1BE2A1CACA94A0085102D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		38F1BE2D1CACA94A0085102D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38F1BE2F1CACA94A0085102D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		38F1BE321CACA94A0085102D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38F1BE341CACA94A0085102D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C808D01CAEC1D000CA931F /* AVFoundation.framework in Frameworks */,
+				38C808C71CACE95800CA931F /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,8 @@
 		38F1BE171CACA94A0085102D = {
 			isa = PBXGroup;
 			children = (
+				38C808CF1CAEC1D000CA931F /* AVFoundation.framework */,
+				38C808C61CACE95800CA931F /* JavaScriptCore.framework */,
 				38F1BE221CACA94A0085102D /* UXAPP */,
 				38F1BE211CACA94A0085102D /* Products */,
 			);
@@ -50,7 +58,7 @@
 		38F1BE211CACA94A0085102D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				38F1BE201CACA94A0085102D /* UXAPP.app */,
+				38F1BE201CACA94A0085102D /* 悠闲韩国.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +66,13 @@
 		38F1BE221CACA94A0085102D /* UXAPP */ = {
 			isa = PBXGroup;
 			children = (
+				38C808C41CACE56600CA931F /* index.html */,
 				38F1BE261CACA94A0085102D /* AppDelegate.h */,
 				38F1BE271CACA94A0085102D /* AppDelegate.m */,
 				38F1BE291CACA94A0085102D /* ViewController.h */,
 				38F1BE2A1CACA94A0085102D /* ViewController.m */,
 				38F1BE2C1CACA94A0085102D /* Main.storyboard */,
 				38F1BE2F1CACA94A0085102D /* Assets.xcassets */,
-				38F1BE311CACA94A0085102D /* LaunchScreen.storyboard */,
 				38F1BE341CACA94A0085102D /* Info.plist */,
 				38F1BE231CACA94A0085102D /* Supporting Files */,
 			);
@@ -96,7 +104,7 @@
 			);
 			name = UXAPP;
 			productName = UXAPP;
-			productReference = 38F1BE201CACA94A0085102D /* UXAPP.app */;
+			productReference = 38F1BE201CACA94A0085102D /* 悠闲韩国.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +118,7 @@
 				TargetAttributes = {
 					38F1BE1F1CACA94A0085102D = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = R2E9B69LUH;
+						DevelopmentTeam = N9J33N8Q6W;
 					};
 				};
 			};
@@ -137,7 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38F1BE331CACA94A0085102D /* LaunchScreen.storyboard in Resources */,
+				38C808C51CACE56600CA931F /* index.html in Resources */,
 				38F1BE301CACA94A0085102D /* Assets.xcassets in Resources */,
 				38F1BE2E1CACA94A0085102D /* Main.storyboard in Resources */,
 			);
@@ -167,14 +175,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		38F1BE311CACA94A0085102D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				38F1BE321CACA94A0085102D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -195,7 +195,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: YouXian Technology(Beijing) Co., Ltd. (N9J33N8Q6W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: YouXian Technology(Beijing) Co., Ltd. (N9J33N8Q6W)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -238,7 +239,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: YouXian Technology(Beijing) Co., Ltd. (N9J33N8Q6W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: YouXian Technology(Beijing) Co., Ltd. (N9J33N8Q6W)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -262,10 +264,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				INFOPLIST_FILE = UXAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uxian365.UXAPP;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youxianlvxing.uxapp;
+				PRODUCT_NAME = "悠闲韩国";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -273,10 +284,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				INFOPLIST_FILE = UXAPP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uxian365.UXAPP;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youxianlvxing.uxapp;
+				PRODUCT_NAME = "悠闲韩国";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -299,6 +319,7 @@
 				38F1BE391CACA94A0085102D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

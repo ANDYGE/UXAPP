@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
-@interface ViewController : UIViewController
+//首先创建一个实现了JSExport协议的协议
+@protocol JSIProtocol <JSExport>
+//开始调用二维码扫描程序
+-(void)startScan;
+@end
+
+@interface ViewController : UIViewController<UIWebViewDelegate,JSIProtocol>
 
 
 @end
