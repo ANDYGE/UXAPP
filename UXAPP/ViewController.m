@@ -56,7 +56,7 @@ UITextField *txtPwd;
 //加载进度显示
 UIActivityIndicatorView *activityIndicator;
 
-UIAlertView *alert;
+UIAlertController *alerter;
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -84,11 +84,9 @@ UIAlertView *alert;
     imgView.frame = viewBounds;
     [self.view addSubview:imgView];
     
-    alert = [[UIAlertView alloc] initWithTitle:@"提示"
-                                       message:@""
-                                      delegate:nil
-                             cancelButtonTitle:@"确定"
-                             otherButtonTitles:nil];
+    alerter = [UIAlertController alertControllerWithTitle:@"提示" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alerter addAction:okAction];
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
@@ -219,8 +217,8 @@ UIAlertView *alert;
 -(void) startScan{
     NSLog(@"build the Scan View");
     webview.hidden = true;
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
-    
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:NO];
+    //[self prefersStatusBarHidden];
     scanView = [[UIView alloc] init];
     scanView.frame = viewBounds;
     scanView.bounds = viewBounds;
@@ -411,13 +409,18 @@ UIAlertView *alert;
     else{
         [self backToMain];
         NSString *mes = [NSString stringWithFormat:@"您扫描的不是有效的连接二维码\r\n 该二维码数据为：%@ ",result];
-        [alert setMessage:mes];
-        [alert show];
+        [self alert:mes];
     }
     
     // 以及处理了结果，下次扫描
     _lastResult = YES;
 }
+
+-(void)alert:(NSString *)info{
+    [alerter setMessage:info];
+    [self presentViewController:alerter animated:YES completion:nil];
+}
+
 
 #pragma UIWebViewDelegate
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType{
