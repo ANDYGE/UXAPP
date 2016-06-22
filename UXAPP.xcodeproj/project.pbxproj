@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38C808C51CACE56600CA931F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 38C808C41CACE56600CA931F /* index.html */; };
 		38C808C71CACE95800CA931F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C808C61CACE95800CA931F /* JavaScriptCore.framework */; };
 		38C808D01CAEC1D000CA931F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C808CF1CAEC1D000CA931F /* AVFoundation.framework */; };
 		38F1BE251CACA94A0085102D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F1BE241CACA94A0085102D /* main.m */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		38C808C41CACE56600CA931F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index.html; path = ../../index.html; sourceTree = "<group>"; };
 		38C808C61CACE95800CA931F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/PrivateFrameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		38C808CF1CAEC1D000CA931F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		38F1BE201CACA94A0085102D /* 悠闲韩国.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "悠闲韩国.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,7 +64,6 @@
 		38F1BE221CACA94A0085102D /* UXAPP */ = {
 			isa = PBXGroup;
 			children = (
-				38C808C41CACE56600CA931F /* index.html */,
 				38F1BE261CACA94A0085102D /* AppDelegate.h */,
 				38F1BE271CACA94A0085102D /* AppDelegate.m */,
 				38F1BE291CACA94A0085102D /* ViewController.h */,
@@ -145,7 +142,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38C808C51CACE56600CA931F /* index.html in Resources */,
 				38F1BE301CACA94A0085102D /* Assets.xcassets in Resources */,
 				38F1BE2E1CACA94A0085102D /* Main.storyboard in Resources */,
 			);
